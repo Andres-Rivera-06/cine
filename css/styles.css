@@ -1,0 +1,50 @@
+body{
+    background-color: bisque;
+}
+
+
+.contenedor_edad{
+    display: flex;
+    align-items: center;
+}
+
+
+#edad{
+    height: 20px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.genero{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+
+.resultados{
+    display: flex;
+}
+
+
+.resultados_contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado_dos{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.resultados_texto{
+    font-size: 20px;
+}
+
+img{
+    height: 150px;
+    width: 110px
+}

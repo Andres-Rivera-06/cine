@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+    
+    <title>Cine Pereira</title>
+</head>
+<body onload="ocultar_imagenes()">
+    <h1>Bienvenido a Cine Pereira</h1>
+    <h2>Cartelera principal</h2>
+    <p>Queremos hacer de tu visita, una experiencia mas placentera. Para esto, ingresa tu edad y selecciona el genero que mas te guste, y le recomendaremos una pelicula</p>
+
+    <div class="contenedor_edad">
+        <p>Edad: </p>
+        <input type="number" id="edad">
+    </div>
+    <div>
+        <button class="genero" id="drama" onclick="recomendar_pelicula(drama.value)" value="drama">Drama</button>
+        <button class="genero" id="comedia" onclick="recomendar_pelicula(comedia.value)" value="comedia">Comedia</button>
+        <button class="genero" id="musical" onclick="recomendar_pelicula(musical.value)" value="musical">Musical</button>
+        <button class="genero" id="crimen" onclick="recomendar_pelicula(crimen.value)" value="crimen">Crimen</button>
+    </div>
+    <h3>Nuestra recomendación</h3>
+
+    <section class="resultados">
+        <div class="resultados_contenedor">
+            <div id="resultado_uno" class="resultados_texto"></div>
+            <img src="img/casablanca.jpg" alt="" id="foto_casablanca">
+            <img src="img/back_to_the_future.jpg" alt="" id="foto_future">
+            <img src="img/la_la_land.jpg" alt="" id="foto_land">
+        </div>
+        <div class="resultados_contenedor">
+            <div id="resultado_dos" class="resultados_texto"></div>
+            <img src="img/the_shawshank_redemption.jpg" alt="" id="foto_redemption">
+            <img src="img/the_truman_show.jpg" alt="" id="foto_truman">
+            <img src="img/les_miserables.jpg" alt="" id="foto_miserables">
+            <img src="img/el_secreto_de_sus_ojos.jpg" alt="" id="foto_secreto">
+
+        </div>
+        <div class="resultados_contenedor">
+            <div id="resultado_tres" class="resultados_texto"></div>
+            <img src="img/taxi_driver.jpg" alt="" id="foto_driver">
+            <img src="img/the_wolf_of_wall_street.jpg" alt="" id="foto_wolf">
+            <img src="img/the_rocky_horror_picture_show.jpg" alt="" id="foto_rocky">
+            <img src="img/the_godfather.jpg" alt="" id="foto_padrino">
+        </div>
+    </section>
+
+</body>
+</html>
